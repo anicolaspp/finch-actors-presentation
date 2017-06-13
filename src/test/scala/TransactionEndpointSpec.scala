@@ -39,7 +39,7 @@ class TransactionEndpointSpec extends TestKit(ActorSystem("TransactionEndpointSp
 //      responseAs[Account] should be (Account("001", 10))
 //    }
   }
-//
+
   it should "match account" in {
     val manager = system.actorOf(Manager.props(List("001")))
 
@@ -55,7 +55,7 @@ class TransactionEndpointSpec extends TestKit(ActorSystem("TransactionEndpointSp
 //      responseAs[Account] should be (Account("001", 100))
 //    }
   }
-//
+
   it should "match unknown account" in {
     val manager = system.actorOf(Manager.props(List.empty))
 
