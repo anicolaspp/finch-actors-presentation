@@ -67,4 +67,12 @@ class TransactionEndpointSpec extends TestKit(ActorSystem("TransactionEndpointSp
 //      responseAs[Account] should be (AccountUtils.empty)
 //    }
   }
+
+  it should "match accounts" in {
+
+  }
+
+  it should "match get money" in {
+    
+  }
 }
