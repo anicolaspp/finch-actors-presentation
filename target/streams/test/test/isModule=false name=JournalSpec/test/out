@@ -1,6 +1,0 @@
-[0m[[0minfo[0m] [0m[32mJournalSpec:[0m[0m
-[0m[[0minfo[0m] [0m[32m- should start with no transactions[0m[0m
-[0m[[0minfo[0m] [0m[32m- should return account with not balance[0m[0m
-[0m[[0minfo[0m] [0m[32m- should add transaction[0m[0m
-[0m[[0minfo[0m] [0m[32m- should not update if wrong account[0m[0m
-[0m[[0minfo[0m] [0m[32m- should remove balance correctly[0m[0m

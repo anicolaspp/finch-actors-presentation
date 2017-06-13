@@ -6,10 +6,14 @@ import nico.bank.demo.AccountActor._
 import nico.bank.demo.Manager._
 
 import scala.concurrent.Future
-import scala.util.{Random, Success}
-
+import scala.util.Random
 
 case class Account(id: String, balance: Int)
+
+object AccountUtils {
+  def empty: Account = Account("", 0)
+}
+
 
 case class Transaction(id: String, accountId: String, balance: Int)
 
@@ -32,23 +36,19 @@ object Journal {
 
     override def transactions(): List[Transaction] = st.toList
 
-    override def account: Account = Account(accountId, transactions.toList.map(_.balance).sum)
+    override def account: Account = Account(accountId, transactions.map(_.balance).sum)
 
-    override def add(transaction: Transaction): Account = {
+    override def add(transaction: Transaction): Account =
       if (transaction.accountId == accountId) {
-
-
-
         st += transaction
 
-        if (account.balance < 0){
+        if (account.balance < 0) {
 
           st = st.dropRight(1)
 
           account
         } else account
       } else account
-    }
   }
 }
 
@@ -96,10 +96,10 @@ object AccountActor {
 }
 
 class Manager(accounts: List[String]) extends Actor {
-  import scala.concurrent.duration._
-  import akka.pattern._
+  import akka.pattern.{pipe, _}
   import context.dispatcher
-  import akka.pattern.pipe
+
+  import scala.concurrent.duration._
   implicit val timeout = akka.util.Timeout(5 seconds)
 
   accounts.foreach(id => context.actorOf(AccountActor.props(id), id))
@@ -121,7 +121,6 @@ class Manager(accounts: List[String]) extends Actor {
 
         (actor ? GetBalance).mapTo[Account].pipeTo(sender())
       }
-
     }
   }
 
@@ -143,4 +142,3 @@ object Manager {
   case class Get(accountId: String, amount: Int)
   case object GetFailed
 }
-

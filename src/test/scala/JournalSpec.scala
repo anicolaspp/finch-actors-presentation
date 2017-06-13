@@ -1,11 +1,11 @@
+package nico.bank.demo.test
+
 import akka.actor.ActorSystem
 import akka.testkit.{ImplicitSender, TestKit}
 import nico.bank.demo.AccountActor._
 import nico.bank.demo.Manager.{Accounts, AccountsResponse, Get, Put}
 import nico.bank.demo._
 import org.scalatest.{BeforeAndAfterAll, FlatSpec, FlatSpecLike, Matchers}
-
-
 
 class JournalSpec extends FlatSpec
   with Matchers
@@ -133,17 +133,24 @@ class AccountManagerActorSpec extends TestKit(ActorSystem("AccountManagerActorSp
   }
 
   it should "send gets to account" in {
-    val manager = system.actorOf(Manager.props(List("001")))
+    val manager = system.actorOf(Manager.props(List("001", "002")))
 
     manager ! Put("001", 10)
     manager ! Get("001", 5)
+
+    manager ! Put("002", 5)
+    manager ! Get("002", 10)
     manager ! Accounts
 
     expectMsgType[Account]
     expectMsgType[Account]
+    expectMsgType[Account]
+    expectMsgType[Account]
+
 
     val accountsResponse = expectMsgType[AccountsResponse]
 
-    accountsResponse.accounts should contain only (Account("001", 5))
+    accountsResponse.accounts should contain only (Account("001", 5), Account("002", 5))
   }
 }
+

@@ -4,7 +4,7 @@
 		module="actor-presentation_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20170610182315"
+		publication="20170611215147"
 	>
 		<description>
 		actor-presentation
@@ -36,6 +36,12 @@
 		<dependency org="org.scala-lang" name="scala-library" rev="2.12.2" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="com.typesafe.akka" name="akka-actor_2.12" rev="2.5.2" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.akka" name="akka-testkit_2.12" rev="2.5.2" conf="test->default(compile)"/>
+		<dependency org="com.github.finagle" name="finch-core_2.12" rev="0.14.0" conf="compile->default(compile)"/>
+		<dependency org="com.github.finagle" name="finch-generic_2.12" rev="0.14.0" conf="compile->default(compile)"/>
+		<dependency org="com.github.finagle" name="finch-circe_2.12" rev="0.14.0" conf="compile->default(compile)"/>
+		<dependency org="io.circe" name="circe-core_2.12" rev="0.8.0" conf="compile->default(compile)"/>
+		<dependency org="io.circe" name="circe-generic_2.12" rev="0.8.0" conf="compile->default(compile)"/>
+		<dependency org="io.circe" name="circe-parser_2.12" rev="0.8.0" conf="compile->default(compile)"/>
 		<dependency org="org.scalactic" name="scalactic_2.12" rev="3.0.1" conf="compile->default(compile)"/>
 		<dependency org="org.scalatest" name="scalatest_2.12" rev="3.0.1" conf="test->default(compile)"/>
 	</dependencies>
