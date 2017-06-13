@@ -1,5 +1,5 @@
 
-package nico.bank.demo
+package nico.bank.demo.bank
 
 case class Account(id: String, balance: Int)
 

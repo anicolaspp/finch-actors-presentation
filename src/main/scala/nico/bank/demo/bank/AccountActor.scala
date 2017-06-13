@@ -1,7 +1,7 @@
-package nico.bank.demo
+package nico.bank.demo.bank
 
 import akka.actor.{Actor, Props}
-import nico.bank.demo.AccountActor._
+import nico.bank.demo.bank.AccountActor._
 
 import scala.util.Random
 

@@ -1,8 +1,8 @@
-package nico.bank.demo
+package nico.bank.demo.bank
 
 import akka.actor.{Actor, ActorRef, Props}
-import nico.bank.demo.AccountActor.{AddBalance, GetBalance, RemoveBalance}
-import nico.bank.demo.Manager._
+import nico.bank.demo.bank.AccountActor.{AddBalance, GetBalance, RemoveBalance}
+import nico.bank.demo.bank.Manager._
 
 import scala.concurrent.Future
 

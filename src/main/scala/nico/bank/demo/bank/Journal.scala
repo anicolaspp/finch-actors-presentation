@@ -1,4 +1,4 @@
-package nico.bank.demo
+package nico.bank.demo.bank
 
 trait Journal {
 

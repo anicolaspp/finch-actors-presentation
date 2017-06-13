@@ -2,8 +2,8 @@ package nico.bank.demo.test
 
 import akka.actor.ActorSystem
 import akka.testkit.{ImplicitSender, TestKit}
-import nico.bank.demo.Manager.{Accounts, AccountsResponse, Get, Put}
-import nico.bank.demo.{Account, Manager}
+import nico.bank.demo.bank.Manager.{Accounts, AccountsResponse, Get, Put}
+import nico.bank.demo.bank.{Account, Manager}
 import org.scalatest.{BeforeAndAfterAll, FlatSpecLike, Matchers}
 
 class AccountManagerActorSpec extends TestKit(ActorSystem("AccountManagerActorSpec"))

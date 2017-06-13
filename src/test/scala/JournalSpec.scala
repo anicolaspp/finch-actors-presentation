@@ -1,7 +1,7 @@
 package nico.bank.demo.test
 
-import nico.bank.demo._
-import org.scalatest.{BeforeAndAfterAll, FlatSpec, Matchers}
+import nico.bank.demo.bank.{Account, Journal, Transaction}
+import org.scalatest.{FlatSpec, Matchers}
 
 class JournalSpec extends FlatSpec
   with Matchers {

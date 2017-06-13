@@ -7,9 +7,9 @@ import com.twitter.util.{Future => TFuture, Promise => TPromise}
 import io.circe.generic.auto._
 import io.finch.circe._
 import io.finch.{Endpoint, _}
-import nico.bank.demo.{Account, AccountUtils, Manager}
-import nico.bank.demo.Manager.AccountsResponse
-import nico.bank.demo.endpoint.TransactionEndpoint.GetMoneyResult
+import nico.bank.demo.bank.Manager.AccountsResponse
+import nico.bank.demo.bank.{Account, AccountUtils, Manager}
+import nico.bank.demo.endpoint.TransactionEndpoint.Response
 
 import scala.concurrent.duration._
 import scala.concurrent.{ExecutionContext, Future => SFuture, Promise => SPromise}
@@ -19,13 +19,13 @@ trait TransactionEndpoint {
 
   def putMoney: Endpoint[Account]
 
-  def getMoney: Endpoint[GetMoneyResult]
+  def getMoney: Endpoint[Response]
 
   def account: Endpoint[Account]
 
   def accounts: Endpoint[List[Account]]
 
-//  def api = putMoney :+: getMoney :+: account :+: accounts
+  def api = putMoney :+: getMoney :+: account :+: accounts
 }
 
 object TransactionEndpoint {
@@ -37,70 +37,53 @@ object TransactionEndpoint {
 
       (manager ? Manager.Put(putRquest.acc, putRquest.amount))
         .mapTo[Account]
-        .asTwitter
         .map(Ok)
+        .asTwitter
 
     }
 
-    override def getMoney: Endpoint[GetMoneyResult] = post("account" :: "money" :: string :: int) {
-      (accountId: String, amount: Int) =>
-        
-        getAccount(manager, accountId)
-          .flatMap[Output[GetMoneyResult]] {
-          case None => SFuture[Output[GetMoneyResult]](NotFound(new Exception()))
+    override def getMoney: Endpoint[Response] = get("account" :: "money" :: string :: int) { (accountId: String, amount: Int) =>
+        getAccount(manager, accountId).flatMap[Response] {
+          case None => SFuture { AccountNotFound(accountId) }
           case Some(acc) => {
             procesGetMoney(acc, amount, manager).map { newAccount =>
-              if (newAccount.balance == acc.balance) Ok(GetMoneyResult(amount, false)) else Ok(GetMoneyResult(amount, true))
+              if (newAccount.balance == acc.balance) GetMoneyResult(amount, false) else GetMoneyResult(amount, true)
             }
           }
-        }.asTwitter
+        }
+          .map(Ok)
+          .asTwitter
     }
-
-
-
-
-
-//        getAccount(manager, accountId)
-//          .asTwitter
-//          .map[Output[GetMoneyResult]] {
-//          case None => NotFound(new Exception())
-//          case Some(acc) => procesGetMoney(acc, amount, manager).flatMap { newAccount =>
-//            if (newAccount.balance == acc) GetMoneyResult(amount, false) else GetMoneyResult(amount, true)
-//          }.asTwitter
-//              .map(Ok)
-//        }
-//    }
-
-    private def procesGetMoney(account: Account, amount: Int, manager: ActorRef) =
-      (manager ? Manager.Get(account.id, amount))
-        .mapTo[Account]
-
-    override def accounts: Endpoint[List[Account]] = ???
+    
+    override def accounts: Endpoint[List[Account]] = get("accounts") {
+      Ok(List.empty[Account])
+    }
 
     override def account: Endpoint[Account] = get("account" :: string) { accountId: String =>
 
       getAccount(manager, accountId)
-        .asTwitter
         .map {
           case Some(acc) => Ok(acc)
           case None => Ok(AccountUtils.empty)
         }
+        .asTwitter
     }
 
     private def getAccount(manager: ActorRef, accountId: String) =
       (manager ? Manager.Accounts)
         .mapTo[AccountsResponse]
-        .map { response => response.accounts.find(_.id == accountId)
-        }
+        .map(_.accounts.find(_.id == accountId))
+
+    private def procesGetMoney(account: Account, amount: Int, manager: ActorRef) =
+      (manager ? Manager.Get(account.id, amount))
+        .mapTo[Account]
   }
 
-//      .map {
-//        case Some(acc) => Ok(acc)
-//        case None => Ok(AccountUtils.empty)
-//      }
+  sealed trait Response
 
+  case class GetMoneyResult(requested: Int, processed: Boolean) extends Response
 
-  case class GetMoneyResult(requested: Int, processed: Boolean)
+  case class AccountNotFound(accountId: String) extends Response
 
   case class PutMoney(acc: String, amount: Int)
 
