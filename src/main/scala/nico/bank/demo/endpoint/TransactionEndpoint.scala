@@ -43,8 +43,8 @@ object TransactionEndpoint {
     override def getMoney: Endpoint[Response] = get("account" :: "money" :: string :: int) { (accountId: String, amount: Int) =>
       getAccount(manager, accountId)
         .flatMap[Response] {
-        case None       =>  SFuture { AccountNotFound(accountId) }
-        case Some(acc)  =>  {
+        case None       => SFuture { AccountNotFound(accountId) }
+        case Some(acc)  => {
           procesGetMoney(acc, amount, manager).map { newAccount =>
             if (newAccount.balance == acc.balance) GetMoneyResult(amount, false) else GetMoneyResult(amount, true)
           }
