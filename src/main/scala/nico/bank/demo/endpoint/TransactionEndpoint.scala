@@ -34,25 +34,24 @@ object TransactionEndpoint {
     implicit val askTimeout: Timeout = 3 seconds
 
     override def putMoney: Endpoint[Account] = post("credit" :: jsonBody[PutMoney]) { putRquest: PutMoney =>
-
       (manager ? Manager.Put(putRquest.acc, putRquest.amount))
         .mapTo[Account]
         .map(Ok)
         .asTwitter
-
     }
 
     override def getMoney: Endpoint[Response] = get("account" :: "money" :: string :: int) { (accountId: String, amount: Int) =>
-        getAccount(manager, accountId).flatMap[Response] {
-          case None => SFuture { AccountNotFound(accountId) }
-          case Some(acc) => {
-            procesGetMoney(acc, amount, manager).map { newAccount =>
-              if (newAccount.balance == acc.balance) GetMoneyResult(amount, false) else GetMoneyResult(amount, true)
-            }
+      getAccount(manager, accountId)
+        .flatMap[Response] {
+        case None       =>  SFuture { AccountNotFound(accountId) }
+        case Some(acc)  =>  {
+          procesGetMoney(acc, amount, manager).map { newAccount =>
+            if (newAccount.balance == acc.balance) GetMoneyResult(amount, false) else GetMoneyResult(amount, true)
           }
         }
-          .map(Ok)
-          .asTwitter
+      }
+        .map(Ok)
+        .asTwitter
     }
     
     override def accounts: Endpoint[List[Account]] = get("accounts") {
@@ -60,12 +59,12 @@ object TransactionEndpoint {
     }
 
     override def account: Endpoint[Account] = get("account" :: string) { accountId: String =>
-
       getAccount(manager, accountId)
-        .map {
-          case Some(acc) => Ok(acc)
-          case None => Ok(AccountUtils.empty)
+        .map[Account] {
+          case Some(acc)  =>  acc
+          case None       =>  AccountUtils.empty
         }
+        .map(Ok)
         .asTwitter
     }
 

@@ -1,7 +1,7 @@
 #Successful Tests
-#Tue Jun 13 13:04:34 EDT 2017
-nico.bank.demo.test.AccountManagerActorSpec=1497373474519
-nico.bank.demo.test.AccountActorSpec=1497373474449
-TransactionEndpointSpec=1497373474945
+#Tue Jun 13 13:23:15 EDT 2017
+nico.bank.demo.test.AccountManagerActorSpec=1497374595371
+nico.bank.demo.test.AccountActorSpec=1497374595334
+TransactionEndpointSpec=1497374595840
 AccountActorSpec=1497316475887
-nico.bank.demo.test.JournalSpec=1497373474111
+nico.bank.demo.test.JournalSpec=1497374595003

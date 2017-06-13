@@ -2,32 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99ffc7d3-3cd2-49d5-bf17-5b7ee855f6f1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Account$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Account.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Journal$$anon$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Journal$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Journal.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Transaction$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Transaction.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/Account.scala" afterPath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/bank/Account.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/AccountActor.scala" afterPath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/bank/AccountActor.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/AccountUtils.scala" afterPath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/bank/AccountUtils.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/Journal.scala" afterPath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/bank/Journal.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/Manager.scala" afterPath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/bank/Manager.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/Transaction.scala" afterPath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/bank/Transaction.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/endpoint/TransactionEndpoint.scala" afterPath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/endpoint/TransactionEndpoint.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/server/server.scala" afterPath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/server/server.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/AccountActorSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/AccountActorSpec.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/AccountManagerActorSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/AccountManagerActorSpec.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/JournalSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/JournalSpec.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/TransactionEndpointSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/TransactionEndpointSpec.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/definedTests/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/test/definedTests/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/incCompileSetup/$global/streams/inc_compile_2.12" afterPath="$PROJECT_DIR$/target/streams/test/incCompileSetup/$global/streams/inc_compile_2.12" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/test/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/test/test/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/test/$global/streams/succeeded_tests" afterPath="$PROJECT_DIR$/target/streams/test/test/$global/streams/succeeded_tests" />
     </list>
@@ -99,17 +79,15 @@
       <file leaf-file-name="TransactionEndpoint.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/nico/bank/demo/endpoint/TransactionEndpoint.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="74" column="12" lean-forward="true" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+            <state relative-caret-position="450">
+              <caret line="54" column="8" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
               <folding>
                 <element signature="e#614#823#1" expanded="false" />
-                <element signature="e#1814#1916#0" expanded="false" />
-                <element signature="e#1879#1916#0" expanded="false" />
-                <element signature="e#2063#2156#0" expanded="false" />
-                <element signature="e#2372#2524#0" expanded="false" />
-                <element signature="e#2818#3084#0" expanded="false" />
-                <element signature="e#2824#3080#0" expanded="false" />
-                <element signature="e#2946#3065#0" expanded="false" />
+                <element signature="e#1810#1912#0" expanded="false" />
+                <element signature="e#1875#1912#0" expanded="false" />
+                <element signature="e#2840#3106#0" expanded="false" />
+                <element signature="e#2846#3102#0" expanded="false" />
+                <element signature="e#2968#3087#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -596,7 +574,7 @@
       <workItem from="1497132950928" duration="389000" />
       <workItem from="1497133368378" duration="11684000" />
       <workItem from="1497150589815" duration="22656000" />
-      <workItem from="1497319285889" duration="7019000" />
+      <workItem from="1497319285889" duration="8151000" />
     </task>
     <servers />
   </component>
@@ -633,10 +611,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41748000" />
+    <option name="totallyTimeSpent" value="42880000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
@@ -659,7 +638,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32364598" sideWeight="0.49713877" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32364598" sideWeight="0.49713877" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32474965" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -680,16 +659,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/nico/bank/demo/endpoint/TransactionEndpoint.scala</url>
-          <line>46</line>
-          <properties>
-            <option name="lambda-ordinal" value="0" />
-          </properties>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
@@ -1105,17 +1074,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/nico/bank/demo/endpoint/TransactionEndpoint.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="74" column="12" lean-forward="true" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+        <state relative-caret-position="450">
+          <caret line="54" column="8" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
           <folding>
             <element signature="e#614#823#1" expanded="false" />
-            <element signature="e#1814#1916#0" expanded="false" />
-            <element signature="e#1879#1916#0" expanded="false" />
-            <element signature="e#2063#2156#0" expanded="false" />
-            <element signature="e#2372#2524#0" expanded="false" />
-            <element signature="e#2818#3084#0" expanded="false" />
-            <element signature="e#2824#3080#0" expanded="false" />
-            <element signature="e#2946#3065#0" expanded="false" />
+            <element signature="e#1810#1912#0" expanded="false" />
+            <element signature="e#1875#1912#0" expanded="false" />
+            <element signature="e#2840#3106#0" expanded="false" />
+            <element signature="e#2846#3102#0" expanded="false" />
+            <element signature="e#2968#3087#0" expanded="false" />
           </folding>
         </state>
       </provider>
