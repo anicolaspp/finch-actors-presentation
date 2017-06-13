@@ -2,7 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99ffc7d3-3cd2-49d5-bf17-5b7ee855f6f1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/Account.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/AccountActor.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/AccountUtils.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/Journal.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/Manager.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/Transaction.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/nico/bank/demo/endpoint/TransactionEndpoint.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/AccountActorSpec.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/AccountManagerActorSpec.scala" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Account.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/TransactionEndpoint.scala" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Account$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Account$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Account.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Account.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Journal$$anon$1.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Journal$$anon$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Journal$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Journal$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Journal.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Journal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Transaction$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Transaction$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Transaction.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/nico/bank/demo/Transaction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/$global/$global/definedTestNames/data" afterPath="$PROJECT_DIR$/target/streams/test/$global/$global/definedTestNames/data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/JournalSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/JournalSpec.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/TransactionEndpointSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/TransactionEndpointSpec.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/definedTests/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/test/definedTests/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/incCompileSetup/$global/streams/inc_compile_2.12" afterPath="$PROJECT_DIR$/target/streams/test/incCompileSetup/$global/streams/inc_compile_2.12" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/test/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/test/test/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/test/$global/streams/succeeded_tests" afterPath="$PROJECT_DIR$/target/streams/test/test/$global/streams/succeeded_tests" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,90 +62,126 @@
       <file leaf-file-name="JournalSpec.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/JournalSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="75">
+              <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
               <folding>
-                <element signature="e#29#58#0" expanded="true" />
-                <element signature="e#387#1461#0" expanded="false" />
-                <element signature="e#434#541#0" expanded="false" />
-                <element signature="e#592#660#0" expanded="false" />
-                <element signature="e#695#1043#0" expanded="false" />
-                <element signature="e#1090#1252#0" expanded="false" />
-                <element signature="e#1296#1459#0" expanded="false" />
-                <element signature="e#1603#2409#0" expanded="false" />
-                <element signature="e#1637#1779#0" expanded="false" />
-                <element signature="e#1810#1994#0" expanded="false" />
-                <element signature="e#2028#2343#0" expanded="false" />
-                <element signature="e#2580#3808#0" expanded="false" />
-                <element signature="e#2615#2840#0" expanded="false" />
-                <element signature="e#2880#3294#0" expanded="false" />
-                <element signature="e#3334#3806#0" expanded="false" />
+                <element signature="e#213#320#0" expanded="false" />
+                <element signature="e#371#439#0" expanded="false" />
+                <element signature="e#474#822#0" expanded="false" />
+                <element signature="e#869#1031#0" expanded="false" />
+                <element signature="e#1075#1238#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountManagerActorSpec.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/AccountManagerActorSpec.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+              <folding>
+                <element signature="e#450#1742#0" expanded="false" />
+                <element signature="e#485#710#0" expanded="false" />
+                <element signature="e#750#1164#0" expanded="false" />
+                <element signature="e#1204#1676#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Account.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/Account.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/nico/bank/demo/Account.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="136" column="14" lean-forward="false" selection-start-line="136" selection-start-column="14" selection-end-line="136" selection-end-column="14" />
+            <state relative-caret-position="45">
+              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TransactionEndpoint.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/TransactionEndpoint.scala">
+      <file leaf-file-name="Manager.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/nico/bank/demo/Manager.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="116" column="64" lean-forward="true" selection-start-line="116" selection-start-column="64" selection-end-line="116" selection-end-column="64" />
+            <state relative-caret-position="120">
+              <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
               <folding>
-                <element signature="e#24#65#0" expanded="true" />
+                <element signature="e#24#66#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TransactionEndpointSpec.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AccountActor.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/nico/bank/demo/AccountActor.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+              <folding>
+                <element signature="e#24#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountUtils.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/nico/bank/demo/AccountUtils.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Journal.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/nico/bank/demo/Journal.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransactionEndpoint.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/nico/bank/demo/endpoint/TransactionEndpoint.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="54" column="41" lean-forward="false" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+              <folding>
+                <element signature="e#33#59#0" expanded="true" />
+                <element signature="e#1872#2138#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Transaction.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/nico/bank/demo/Transaction.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransactionEndpointSpec.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/TransactionEndpointSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1073">
-              <caret line="75" column="4" lean-forward="false" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
+            <state relative-caret-position="165">
+              <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Json.scala" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/io.circe/circe-core_2.12/srcs/circe-core_2.12-0.8.0-sources.jar!/io/circe/Json.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Input.scala" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/com.github.finagle/finch-core_2.12/srcs/finch-core_2.12-0.14.0-sources.jar!/io/finch/Input.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/server.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-              <folding>
-                <element signature="e#33#64#0" expanded="true" />
+                <element signature="e#815#817#0" expanded="false" />
+                <element signature="e#1168#1248#0" expanded="false" />
+                <element signature="e#1354#1767#0" expanded="false" />
+                <element signature="e#1632#1634#0" expanded="false" />
+                <element signature="e#1810#2179#0" expanded="false" />
+                <element signature="e#2048#2108#0" expanded="false" />
+                <element signature="e#2213#2219#0" expanded="false" />
+                <element signature="e#2254#2264#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -128,6 +194,7 @@
       <list>
         <option value="Scala Trait" />
         <option value="Scala Class" />
+        <option value="Scala Object" />
       </list>
     </option>
   </component>
@@ -144,11 +211,18 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/scala/Journal.scala" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/scala/Account.scala" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/server.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/AccountActorSpec.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/AccountManagerActorSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/JournalSpec.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Transaction.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/nico/bank/demo/AccountActor.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/nico/bank/demo/Manager.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Account.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/nico/bank/demo/Account.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/TransactionEndpoint.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/nico/bank/demo/endpoint/TransactionEndpoint.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/TransactionEndpointSpec.scala" />
       </list>
     </option>
@@ -215,6 +289,23 @@
               <item name="actor-presentation" type="b2602c69:ProjectViewProjectNode" />
               <item name="actor-presentation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="actor-presentation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="actor-presentation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="actor-presentation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="actor-presentation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -234,12 +325,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/scala" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/scala" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
+      <recent name="nico.bank.demo.endpoint" />
       <recent name="nico.bank.demo" />
+      <recent name="" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -445,7 +537,7 @@
       <updated>1497132946196</updated>
       <workItem from="1497132950928" duration="389000" />
       <workItem from="1497133368378" duration="11684000" />
-      <workItem from="1497150589815" duration="21534000" />
+      <workItem from="1497150589815" duration="22125000" />
     </task>
     <servers />
   </component>
@@ -482,11 +574,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33607000" />
+    <option name="totallyTimeSpent" value="34198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
@@ -509,9 +600,10 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32496697" sideWeight="0.49713877" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32496697" sideWeight="0.49713877" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3204578" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -519,7 +611,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,14 +654,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Account.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/nico/bank/demo/Account.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1755">
           <caret line="117" column="12" lean-forward="false" selection-start-line="117" selection-start-column="12" selection-end-line="117" selection-end-column="12" />
-          <folding>
-            <element signature="e#25#67#0" expanded="false" />
-            <element signature="e#2139#2168#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -579,20 +667,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#387#1461#0" expanded="false" />
-            <element signature="e#434#541#0" expanded="false" />
-            <element signature="e#592#660#0" expanded="false" />
-            <element signature="e#695#1043#0" expanded="false" />
-            <element signature="e#1090#1252#0" expanded="false" />
-            <element signature="e#1296#1459#0" expanded="false" />
-            <element signature="e#1603#2409#0" expanded="false" />
-            <element signature="e#1637#1779#0" expanded="false" />
-            <element signature="e#1810#1994#0" expanded="false" />
-            <element signature="e#2028#2343#0" expanded="false" />
-            <element signature="e#2580#3808#0" expanded="false" />
-            <element signature="e#2615#2840#0" expanded="false" />
-            <element signature="e#2880#3294#0" expanded="false" />
-            <element signature="e#3334#3806#0" expanded="false" />
+            <element signature="e#166#1240#0" expanded="false" />
+            <element signature="e#213#320#0" expanded="false" />
+            <element signature="e#371#439#0" expanded="false" />
+            <element signature="e#474#822#0" expanded="false" />
+            <element signature="e#869#1031#0" expanded="false" />
+            <element signature="e#1075#1238#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -618,20 +698,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="48" lean-forward="false" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
           <folding>
-            <element signature="e#387#1461#0" expanded="false" />
-            <element signature="e#434#541#0" expanded="false" />
-            <element signature="e#592#660#0" expanded="false" />
-            <element signature="e#695#1043#0" expanded="false" />
-            <element signature="e#1090#1252#0" expanded="false" />
-            <element signature="e#1296#1459#0" expanded="false" />
-            <element signature="e#1603#2409#0" expanded="false" />
-            <element signature="e#1637#1779#0" expanded="false" />
-            <element signature="e#1810#1994#0" expanded="false" />
-            <element signature="e#2028#2343#0" expanded="false" />
-            <element signature="e#2580#3808#0" expanded="false" />
-            <element signature="e#2615#2840#0" expanded="false" />
-            <element signature="e#2880#3294#0" expanded="false" />
-            <element signature="e#3334#3806#0" expanded="false" />
+            <element signature="e#166#1240#0" expanded="false" />
+            <element signature="e#213#320#0" expanded="false" />
+            <element signature="e#371#439#0" expanded="false" />
+            <element signature="e#474#822#0" expanded="false" />
+            <element signature="e#869#1031#0" expanded="false" />
+            <element signature="e#1075#1238#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -804,30 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/JournalSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#29#58#0" expanded="true" />
-            <element signature="e#387#1461#0" expanded="false" />
-            <element signature="e#434#541#0" expanded="false" />
-            <element signature="e#592#660#0" expanded="false" />
-            <element signature="e#695#1043#0" expanded="false" />
-            <element signature="e#1090#1252#0" expanded="false" />
-            <element signature="e#1296#1459#0" expanded="false" />
-            <element signature="e#1603#2409#0" expanded="false" />
-            <element signature="e#1637#1779#0" expanded="false" />
-            <element signature="e#1810#1994#0" expanded="false" />
-            <element signature="e#2028#2343#0" expanded="false" />
-            <element signature="e#2580#3808#0" expanded="false" />
-            <element signature="e#2615#2840#0" expanded="false" />
-            <element signature="e#2880#3294#0" expanded="false" />
-            <element signature="e#3334#3806#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/com.github.finagle/finch-core_2.12/srcs/finch-core_2.12-0.14.0-sources.jar!/io/finch/Input.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -849,7 +897,7 @@
         <state relative-caret-position="154">
           <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
           <folding>
-            <element signature="e#33#64#0" expanded="true" />
+            <element signature="e#33#64#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -862,30 +910,123 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Account.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/AccountActorSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="136" column="14" lean-forward="false" selection-start-line="136" selection-start-column="14" selection-end-line="136" selection-end-column="14" />
+        <state relative-caret-position="105">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="e#383#1183#0" expanded="false" />
+            <element signature="e#415#553#0" expanded="false" />
+            <element signature="e#584#768#0" expanded="false" />
+            <element signature="e#802#1117#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/AccountManagerActorSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <element signature="e#450#1742#0" expanded="false" />
+            <element signature="e#485#710#0" expanded="false" />
+            <element signature="e#750#1164#0" expanded="false" />
+            <element signature="e#1204#1676#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/JournalSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding>
+            <element signature="e#213#320#0" expanded="false" />
+            <element signature="e#371#439#0" expanded="false" />
+            <element signature="e#474#822#0" expanded="false" />
+            <element signature="e#869#1031#0" expanded="false" />
+            <element signature="e#1075#1238#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/nico/bank/demo/Account.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/nico/bank/demo/AccountActor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <element signature="e#24#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/nico/bank/demo/AccountUtils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/nico/bank/demo/Journal.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/nico/bank/demo/Manager.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding>
+            <element signature="e#24#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/nico/bank/demo/endpoint/TransactionEndpoint.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="54" column="41" lean-forward="false" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+          <folding>
+            <element signature="e#33#59#0" expanded="true" />
+            <element signature="e#1872#2138#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/nico/bank/demo/Transaction.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/TransactionEndpointSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1073">
-          <caret line="75" column="4" lean-forward="false" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
+        <state relative-caret-position="165">
+          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/TransactionEndpoint.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="116" column="64" lean-forward="true" selection-start-line="116" selection-start-column="64" selection-end-line="116" selection-end-column="64" />
-          <folding>
-            <element signature="e#24#65#0" expanded="true" />
+            <element signature="e#815#817#0" expanded="false" />
+            <element signature="e#1168#1248#0" expanded="false" />
+            <element signature="e#1354#1767#0" expanded="false" />
+            <element signature="e#1632#1634#0" expanded="false" />
+            <element signature="e#1810#2179#0" expanded="false" />
+            <element signature="e#2048#2108#0" expanded="false" />
+            <element signature="e#2213#2219#0" expanded="false" />
+            <element signature="e#2254#2264#0" expanded="false" />
           </folding>
         </state>
       </provider>

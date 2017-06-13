@@ -1,16 +1,18 @@
 import akka.actor.ActorSystem
 import akka.testkit.TestKit
-
 import nico.bank.demo._
-import org.scalatest.{FlatSpecLike, Matchers}
-import io.finch._, io.circe._
+import org.scalatest.{BeforeAndAfterAll, FlatSpecLike, Matchers}
+import io.finch._
+import io.circe._
 import com.twitter.io.Buf
+import nico.bank.demo.endpoint.TransactionEndpoint
 
 import scala.concurrent.ExecutionContext.Implicits.global
 
 class TransactionEndpointSpec extends TestKit(ActorSystem("TransactionEndpointSpec"))
   with FlatSpecLike
-  with Matchers {
+  with Matchers
+  with BeforeAndAfterAll {
   
   it should "match post" in {
 
@@ -75,4 +77,6 @@ class TransactionEndpointSpec extends TestKit(ActorSystem("TransactionEndpointSp
   it should "match get money" in {
     
   }
+
+  override protected def afterAll(): Unit = system.terminate()
 }
