@@ -13,10 +13,8 @@ object server {
   def main(args: Array[String]): Unit = {
 
     implicit val system = ActorSystem("app")
-
-
+    
     val manager = system.actorOf(Manager.props(List("001", "002")))
-
     val service = TransactionEndpoint(manager)(system.dispatcher).api.toService
 
     Await.ready(Http.server.serve(":8080", service))
