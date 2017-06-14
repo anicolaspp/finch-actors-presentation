@@ -17,7 +17,7 @@
 */.scala_dependencies
 */.worksheet
 
-.idea/
+*.idea/
 project/
 finch-actor-presentation/src/main/java/
 finch-actor-presentation/src/main/scala-2.11/
