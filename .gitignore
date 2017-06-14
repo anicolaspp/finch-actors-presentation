@@ -5,6 +5,7 @@ lib_managed/
 src_managed/
 project/boot/
 project/plugins/project/
+project/target/
 *target/
 .history
 .cache
