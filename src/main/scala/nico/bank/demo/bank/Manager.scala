@@ -16,7 +16,7 @@ class Manager(accounts: List[String]) extends Actor {
   accounts.foreach(id => context.actorOf(AccountActor.props(id), id))
 
   override def receive: Receive = {
-    case Accounts => getAccounts(context.children.toList, List.empty).map(xs => AccountsResponse(xs)).pipeTo(sender())
+    case Accounts => getAccounts(context.children.toList, List.empty).map(AccountsResponse).pipeTo(sender())
 
     case Put(acc, amount) => {
       context.child(acc).fold(sender() ! PutFailed){ actor =>

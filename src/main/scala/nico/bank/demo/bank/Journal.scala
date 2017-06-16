@@ -1,5 +1,9 @@
 package nico.bank.demo.bank
 
+import java.io.{File, FileOutputStream, OutputStream}
+
+import scala.util.{Failure, Random, Success, Try}
+
 trait Journal {
 
   def transactions(): List[Transaction]
@@ -19,16 +23,49 @@ object Journal {
 
     override def account: Account = Account(accountId, transactions.map(_.balance).sum)
 
-    override def add(transaction: Transaction): Account =
-      if (transaction.accountId == accountId) {
-        st += transaction
+    override def add(transaction: Transaction): Account = (transaction.accountId, account.balance + transaction.balance >= 0) match {
+      case (`accountId`, true)  =>  st += transaction; account
+      case _                    =>  account
+    }
 
-        if (account.balance < 0) {
+//
+    //  if (transaction.accountId == accountId) {
+    //    st += transaction
 
-          st = st.dropRight(1)
+    //    if (account.balance < 0) {
 
-          account
-        } else account
-      } else account
+    //      st = st.dropRight(1)
+
+    //      account
+    //    } else account
+    //  } else account
+  }
+
+  implicit def save(journal: Journal)(implicit journalPersister: Persister[Journal]): String = {
+    if (journalPersister.store(journal)) journalPersister.where else ""
   }
 }
+
+trait Persister[A] {
+  def store(value: A): Boolean
+
+  def where: String
+}
+
+object Persister {
+
+  def instance[A](func: A => Boolean, w: String) = new Persister[A] {
+    override def store(value: A): Boolean = func(value)
+
+    override def where: String = w
+  }
+
+  implicit val inMemoryIntPersister = new Persister[Int] {
+    override def store(value: Int): Boolean = true
+
+    override def where: String = "memory"
+  }
+}
+
+
+

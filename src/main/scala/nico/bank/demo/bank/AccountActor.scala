@@ -7,6 +7,8 @@ import scala.util.Random
 
 class AccountActor(accountId: String) extends Actor {
 
+  import Journal._
+
   val journal = Journal.For(accountId)
 
   override def receive: Receive = {
@@ -29,6 +31,7 @@ class AccountActor(accountId: String) extends Actor {
       }
     }
   }
+  
 
   private def transactionId = Random.nextLong().toString
 }
