@@ -17,7 +17,7 @@ object Journal {
 
   def For(accountId: String): Journal = new Journal {
 
-    val = st = scala.collection.mutable.MutableList.empty[Transaction]
+    val st = scala.collection.mutable.MutableList.empty[Transaction]
 
     override def transactions(): List[Transaction] = st.toList
 
