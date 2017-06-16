@@ -17,7 +17,7 @@ object Journal {
 
   def For(accountId: String): Journal = new Journal {
 
-    var st = scala.collection.mutable.MutableList.empty[Transaction]
+    val = st = scala.collection.mutable.MutableList.empty[Transaction]
 
     override def transactions(): List[Transaction] = st.toList
 
@@ -27,22 +27,6 @@ object Journal {
       case (`accountId`, true)  =>  st += transaction; account
       case _                    =>  account
     }
-
-//
-    //  if (transaction.accountId == accountId) {
-    //    st += transaction
-
-    //    if (account.balance < 0) {
-
-    //      st = st.dropRight(1)
-
-    //      account
-    //    } else account
-    //  } else account
-  }
-
-  implicit def save(journal: Journal)(implicit journalPersister: Persister[Journal]): String = {
-    if (journalPersister.store(journal)) journalPersister.where else ""
   }
 }
 
